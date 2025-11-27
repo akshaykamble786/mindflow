@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://vercel.com/akshays-projects-1417f322/v0-landing-page-design](https://vercel.com/akshays-projects-1417f322/v0-landing-page-design)**
+**[https://mindfloww.vercel.app](https://mindfloww.vercel.app)**
 
 ## Build your app
 
