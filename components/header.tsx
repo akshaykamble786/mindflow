@@ -10,7 +10,6 @@ const navigation = [
   { name: "Features", href: "#features" },
   { name: "Pricing", href: "#pricing" },
   { name: "Testimonials", href: "#testimonials" },
-  { name: "Blog", href: "#" },
 ]
 
 export function Header() {
@@ -18,8 +17,8 @@ export function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <div className="flex lg:flex-1">
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 md:px-8">
+        <div className="flex md:flex-1">
           <Link href="/" className="flex items-center gap-2">
             <div className="h-8 w-8 rounded-lg bg-primary flex items-center justify-center">
               <span className="text-primary-foreground font-bold text-sm">M</span>
@@ -28,7 +27,7 @@ export function Header() {
           </Link>
         </div>
 
-        <div className="flex items-center gap-2 lg:hidden">
+        <div className="flex items-center gap-2 md:hidden">
           <ThemeToggle />
           <button
             type="button"
@@ -40,7 +39,7 @@ export function Header() {
           </button>
         </div>
 
-        <div className="hidden lg:flex lg:gap-x-10">
+        <div className="hidden md:flex md:gap-x-10">
           {navigation.map((item) => (
             <Link
               key={item.name}
@@ -52,7 +51,7 @@ export function Header() {
           ))}
         </div>
 
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end lg:gap-x-4 lg:items-center">
+        <div className="hidden md:flex md:flex-1 md:justify-end md:gap-x-4 md:items-center">
           <ThemeToggle />
           <Button variant="ghost" className="text-sm font-medium">
             Log in
@@ -62,7 +61,7 @@ export function Header() {
       </nav>
 
       {mobileMenuOpen && (
-        <div className="lg:hidden">
+        <div className="md:hidden">
           <div className="space-y-1 px-6 pb-6 pt-2">
             {navigation.map((item) => (
               <Link
