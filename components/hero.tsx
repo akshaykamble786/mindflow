@@ -1,7 +1,12 @@
+"use client"
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import { Typewriter } from "@/components/typewriter"
 
 export function Hero() {
+  const rotatingWords = ["smarter", "better", "clearer", "effortlessly", "brilliantly"]
+
   return (
     <section className="relative pt-32 pb-20 lg:pt-44 lg:pb-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -16,7 +21,14 @@ export function Hero() {
           </div>
 
           <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl text-balance">
-            Think faster, <span className="text-muted-foreground">write smarter</span>
+            Think faster, <span className="text-muted-foreground">write </span>
+            <Typewriter
+              words={rotatingWords}
+              typingSpeed={80}
+              deletingSpeed={50}
+              pauseDuration={2500}
+              className="text-accent"
+            />
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto text-pretty">
@@ -42,7 +54,11 @@ export function Hero() {
           <div className="relative mx-auto max-w-5xl">
             <div className="rounded-2xl border border-border bg-card p-2 shadow-2xl shadow-accent/5">
               <div className="rounded-xl bg-secondary/50 overflow-hidden">
-                <img src="/modern-minimal-note-taking-app-dashboard-with-ai-f.jpg" alt="Mindflow app dashboard" className="w-full h-auto" />
+                <img
+                  src="/modern-minimal-note-taking-app-dashboard-with-ai-f.jpg"
+                  alt="Mindflow app dashboard"
+                  className="w-full h-auto"
+                />
               </div>
             </div>
             <div className="absolute -bottom-4 -left-4 -right-4 h-24 bg-gradient-to-t from-background to-transparent" />
