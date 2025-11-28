@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react"
 import { Typewriter } from "@/components/typewriter"
 
 export function Hero() {
-  const rotatingWords = ["smarter", "better", "clearer", "effortlessly", "brilliantly"]
+  const rotatingWords = ["smarter", "clearer", "effortlessly", "brilliantly"]
 
   return (
     <section className="relative pt-32 pb-20 lg:pt-44 lg:pb-32">
