@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useMemo } from "react"
 
 interface TypewriterProps {
   words: string[]
@@ -21,6 +21,10 @@ export function Typewriter({
   const [currentText, setCurrentText] = useState("")
   const [isDeleting, setIsDeleting] = useState(false)
   const [isPaused, setIsPaused] = useState(false)
+
+  const longestWord = useMemo(() => {
+    return words.reduce((a, b) => (a.length > b.length ? a : b), "")
+  }, [words])
 
   useEffect(() => {
     const currentWord = words[currentWordIndex]
@@ -56,9 +60,16 @@ export function Typewriter({
   }, [currentText, isDeleting, isPaused, currentWordIndex, words, typingSpeed, deletingSpeed, pauseDuration])
 
   return (
-    <span className={className}>
-      {currentText}
-      <span className="inline-block w-[3px] h-[1em] bg-accent ml-1 animate-blink align-middle" />
+    <span className={`inline-block ${className}`}>
+      {/* Invisible text to reserve space for the longest word */}
+      <span className="invisible absolute" aria-hidden="true">
+        {longestWord}
+      </span>
+      {/* Visible animated text */}
+      <span className="relative">
+        {currentText}
+        <span className="inline-block w-[3px] h-[0.85em] bg-accent ml-0.5 animate-blink align-middle" />
+      </span>
     </span>
   )
 }

@@ -145,8 +145,8 @@
 }
 
 .animate-marquee {
-  /* Increased duration from 15s to 25s for slower scroll */
-  animation: marquee 25s linear infinite;
+  /* Updated duration from 25s to 40s for testimonials */
+  animation: marquee 40s linear infinite;
 }
 
 .animate-marquee:hover {
@@ -167,4 +167,27 @@
 
 .animate-blink {
   animation: blink 1s step-end infinite;
+}
+
+/* Add reverse marquee animation for testimonials row 1 */
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse 40s linear infinite;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Radial gradient utility */
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at center, var(--tw-gradient-stops));
 }

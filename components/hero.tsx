@@ -20,15 +20,18 @@ export function Hero() {
             </div>
           </div>
 
-          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl text-balance">
-            Think faster, <span className="text-muted-foreground">write </span>
-            <Typewriter
-              words={rotatingWords}
-              typingSpeed={80}
-              deletingSpeed={50}
-              pauseDuration={2500}
-              className="text-accent"
-            />
+          <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+            <span className="block">Think faster,</span>
+            <span className="block mt-1 sm:mt-2">
+              <span className="text-muted-foreground">write </span>
+              <Typewriter
+                words={rotatingWords}
+                typingSpeed={80}
+                deletingSpeed={50}
+                pauseDuration={2500}
+                className="text-accent"
+              />
+            </span>
           </h1>
 
           <p className="mt-6 text-lg leading-8 text-muted-foreground max-w-2xl mx-auto text-pretty">
