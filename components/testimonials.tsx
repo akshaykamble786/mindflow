@@ -174,11 +174,7 @@ export function Testimonials() {
   }, [])
 
   return (
-    <section ref={sectionRef} id="testimonials" className="py-24 lg:py-32 overflow-hidden relative">
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="w-[800px] h-[600px] bg-gradient-radial from-purple-500/10 via-transparent to-transparent blur-3xl" />
-      </div>
-
+    <section ref={sectionRef} id="testimonials" className="py-16 lg:py-24 overflow-hidden relative">
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center mb-16">
           <SectionPill>Testimonials</SectionPill>
@@ -190,7 +186,7 @@ export function Testimonials() {
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-6 overflow-x-clip">
           {/* Row 1 - scrolls left to right */}
           <div className="relative">
             <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />

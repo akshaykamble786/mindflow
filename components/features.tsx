@@ -39,7 +39,7 @@ const features = [
 
 export function Features() {
   return (
-    <section id="features" className="py-24 lg:py-32">
+    <section id="features" className="py-16 lg:py-24">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <SectionPill>Features</SectionPill>
@@ -58,8 +58,13 @@ export function Features() {
                 key={feature.name}
                 className="relative group p-6 bg-card rounded-2xl border border-border hover:border-accent/50 hover:shadow-lg hover:shadow-accent/5 transition-all duration-300"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-secondary group-hover:bg-accent/10 transition-colors">
-                  <feature.icon className="h-6 w-6 text-foreground group-hover:text-accent transition-colors" />
+                <div className="relative">
+                  {/* Glow effect behind icon */}
+                  <div className="absolute -inset-1 rounded-xl bg-gradient-to-br from-purple-500/40 via-violet-500/40 to-fuchsia-500/40 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  {/* Icon container with gradient border */}
+                  <div className="relative flex h-12 w-12 items-center justify-center rounded-xl bg-secondary group-hover:bg-accent/10 transition-colors border border-transparent group-hover:border-purple-500/50 shadow-[0_0_0_1px_rgba(139,92,246,0)] group-hover:shadow-[0_0_12px_2px_rgba(139,92,246,0.3)] transition-all duration-300">
+                    <feature.icon className="h-6 w-6 text-foreground group-hover:text-accent transition-colors" />
+                  </div>
                 </div>
                 <h3 className="mt-4 text-lg font-semibold text-foreground">{feature.name}</h3>
                 <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{feature.description}</p>
