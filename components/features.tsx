@@ -168,6 +168,9 @@ export function Features() {
           <h2 className="mt-4 text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
             Everything you need to think clearly
           </h2>
+          <p className="mt-6 text-lg text-muted-foreground">
+            An advanced toolkit to capture, connect, and refine your ideas and knowledge management in one place.
+          </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
