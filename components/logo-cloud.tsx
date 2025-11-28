@@ -131,7 +131,7 @@ export function LogoCloud() {
   return (
     <section className="py-16 border-y border-border bg-secondary/30 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <p className="text-center text-sm font-medium text-muted-foreground mb-10">
+        <p className="text-center text-2xl font-medium text-muted-foreground mb-13">
           Trusted by teams at leading companies
         </p>
       </div>

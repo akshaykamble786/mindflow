@@ -106,15 +106,15 @@ function TestimonialCard({
   isVisible: boolean
   delay: number
 }) {
+  
   return (
     <div
-      className={`group relative flex-shrink-0 w-[350px] md:w-[400px] mx-3 transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      }`}
+      className={`group relative flex-shrink-0 w-[350px] md:w-[400px] mx-3 transition-all duration-700 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+        }`}
       style={{ transitionDelay: `${delay}ms` }}
     >
       {/* Glassmorphism card */}
-      <div className="relative h-full rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:bg-white/[0.08]">
+      <div className="relative h-full rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 p-6 overflow-hidden transition-all duration-300 hover:scale-[1.02] hover:bg-white/[0.08] before:content-[''] before:absolute before:inset-0 before:rounded-2xl before:pointer-events-none before:opacity-0 group-hover:before:opacity-100 before:bg-[radial-gradient(circle,rgba(168,85,247,0.15)_0%,rgba(255,255,255,0)_80%)] before:transition-opacity before:duration-300">
         {/* Animated bottom border on hover */}
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
@@ -155,6 +155,11 @@ function TestimonialCard({
 export function Testimonials() {
   const sectionRef = useRef<HTMLElement>(null)
   const [isVisible, setIsVisible] = useState(false)
+  const [mounted, setMounted] = useState(false)
+
+  useEffect(() => {
+    setMounted(true)
+  }, [])
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -222,12 +227,29 @@ export function Testimonials() {
           </div>
         </div>
 
-        <div className="mt-16 flex justify-center">
-          <button className="group relative px-8 py-4 rounded-full bg-gradient-to-r from-purple-600 to-violet-600 text-white font-semibold text-lg overflow-hidden transition-transform duration-300 hover:scale-105 shadow-lg shadow-purple-500/25">
-            {/* Shimmer effect */}
-            <div className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-1000 bg-gradient-to-r from-transparent via-white/20 to-transparent" />
-            <span className="relative">Join 50,000+ thinkers</span>
-          </button>
+        <div
+          className={`
+            mt-20 text-center
+            transition-all duration-1000 delay-700
+            border-red-500
+            ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}
+          `}
+        >
+          <div className="inline-flex items-center gap-4 glass rounded-full px-2 py-2 border">
+            <div className="flex -space-x-2">
+              {[1, 2, 3, 4].map((i) => (
+                <div
+                  key={i}
+                  className="w-8 h-8 rounded-full bg-gradient-to-br from-primary/50 to-accent/50 border-2 border-background flex items-center justify-center text-xs font-medium text-foreground"
+                >
+                  {String.fromCharCode(64 + i)}
+                </div>
+              ))}
+            </div>
+            <span className="text-sm text-muted-foreground pr-4">
+              Join <span className="text-foreground font-medium">12,000+</span> knowledge workers
+            </span>
+          </div>
         </div>
       </div>
     </section>
