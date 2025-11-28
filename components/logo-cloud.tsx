@@ -3,7 +3,7 @@ export function LogoCloud() {
     {
       name: "Vercel",
       logo: (
-        <svg className="h-7 w-auto" viewBox="0 0 76 65" fill="currentColor">
+        <svg className="h-9 w-auto" viewBox="0 0 76 65" fill="currentColor">
           <path d="M37.5274 0L75.0548 65H0L37.5274 0Z" />
         </svg>
       ),
@@ -11,11 +11,11 @@ export function LogoCloud() {
     {
       name: "Notion",
       logo: (
-        <svg className="h-8 w-auto" viewBox="0 0 100 100" fill="currentColor">
+        <svg className="h-10 w-auto" viewBox="0 0 100 100" fill="currentColor">
           <path d="M6.017 4.313l55.333-4.087c6.797-.583 8.543-.19 12.817 2.917l17.663 12.443c2.913 2.14 3.883 2.723 3.883 5.053v68.243c0 4.277-1.553 6.807-6.99 7.193L24.467 99.967c-4.08.193-6.023-.39-8.16-3.113L3.3 79.94c-2.333-3.113-3.3-5.443-3.3-8.167V11.113c0-3.497 1.553-6.413 6.017-6.8z" />
           <path
             fill="var(--background)"
-            d="M61.35 16.563l-42.4 3.13c-1.553.193-1.94.583-1.94 1.557v53.88c0 .973.387 1.557 1.357 1.363l44.333-2.527c.97-.193 1.357-.78 1.357-1.75V18.12c0-.973-.58-1.753-2.707-1.557zM48.667 28.06c0 1.17-.387 2.143-1.747 2.337L44 30.787v32.2c-2.707 1.363-5.24 2.143-7.367 2.143-3.493 0-4.467-1.17-7.173-4.673L18.333 41.99v17.67l4.657 1.17s0 2.917-4.077 2.917L9.58 64.333c-.387-.78 0-2.143 1.163-2.337l3.107-.777V33.697l-4.27-.387c-.387-1.167.193-2.917 2.14-3.11l10.913-.777 12.24 18.84V33.113l-4.077-.387c-.387-1.363.77-2.337 2.14-2.53l10.08-.777z"
+            d="M61.35 16.563l-42.4 3.13c-1.553.193-1.94 5.813-4.077 5.813L9.58 22.373c-4.08.193-6.023-.39-8.16-3.113L3.3 79.94c-2.333-3.113-3.3-5.443-3.3-8.167V11.113c0-3.497 1.553-6.413 6.017-6.8z"
           />
         </svg>
       ),
@@ -23,7 +23,7 @@ export function LogoCloud() {
     {
       name: "Linear",
       logo: (
-        <svg className="h-7 w-auto" viewBox="0 0 100 100" fill="currentColor">
+        <svg className="h-9 w-auto" viewBox="0 0 100 100" fill="currentColor">
           <path d="M1.22541 61.5228c-.2225-.9485.90748-1.5459 1.59638-.857L39.3342 97.1782c.6889.6889.0915 1.8189-.857 1.5765C20.0515 94.4522 5.54779 79.9485 1.22541 61.5228ZM.00189135 46.8891c-.01764375.2833.08887135.5599.29653765.7676L52.3412 99.7014c.2077.2077.4843.3142.7676.2966 1.3192-.0823 2.6205-.2207 3.9028-.4124C73.7908 97.4728 86.5153 87.7371 93.0218 74.5929c.1801-.3636.1375-.7979-.1117-1.1171L53.3917 34.0574c-.3192-.2492-.7535-.2916-1.1171-.1117-13.1442 6.5065-22.8799 19.231-25.0011 35.9101-.1917 1.2823-.3301 2.5836-.4124 3.9028ZM3.03836 14.2319C12.0553 5.24616 24.1697.000169 37.2941 0c.5762 0 .8904.659.5237 1.0982l-35.6693 42.7759c-.31003.3719-.87058.3111-1.10097-.1196C-1.60804 37.6826-2.93754 25.3105 3.03836 14.2319ZM61.2108 36.9099l36.7779-30.6479c.4383-.3652 1.0975-.0503 1.0975.5246.0002 13.1122-5.2407 25.2168-14.2197 34.2244-8.9789 9.0076-21.0833 14.2565-34.1955 14.2656-.5748.0001-.8894-.6585-.5235-1.0967l11.0633-17.2699Z" />
         </svg>
       ),
@@ -31,7 +31,7 @@ export function LogoCloud() {
     {
       name: "Figma",
       logo: (
-        <svg className="h-8 w-auto" viewBox="0 0 38 57" fill="none">
+        <svg className="h-10 w-auto" viewBox="0 0 38 57" fill="none">
           <path fill="#F24E1E" d="M19 28.5a9.5 9.5 0 1 1 19 0 9.5 9.5 0 0 1-19 0Z" />
           <path fill="#FF7262" d="M0 47.5A9.5 9.5 0 0 1 9.5 38H19v9.5a9.5 9.5 0 1 1-19 0Z" />
           <path fill="#A259FF" d="M19 0v19h9.5a9.5 9.5 0 1 0 0-19H19Z" />
@@ -42,8 +42,9 @@ export function LogoCloud() {
     },
     {
       name: "Stripe",
+      showName: false,
       logo: (
-        <svg className="h-8 w-auto" viewBox="0 0 512 214" fill="currentColor">
+        <svg className="h-10 w-auto" viewBox="0 0 512 214" fill="currentColor">
           <path d="M512 110.08c0-36.409-17.636-65.138-51.342-65.138c-33.85 0-54.33 28.73-54.33 64.854c0 42.808 24.179 64.426 58.88 64.426c16.925 0 29.725-3.84 39.396-9.244v-28.445c-9.67 4.836-20.764 7.823-34.844 7.823c-13.796 0-26.027-4.836-27.591-21.618h69.547c0-1.85.284-9.245.284-12.658m-70.258-13.511c0-16.071 9.814-22.756 18.774-22.756c8.675 0 17.92 6.685 17.92 22.756zm-90.31-51.627c-13.939 0-22.899 6.542-27.876 11.094l-1.85-8.818h-31.288v165.83l35.555-7.537l.143-40.249c5.12 3.698 12.657 8.96 25.173 8.96c25.458 0 48.64-20.48 48.64-65.564c-.142-41.245-23.609-63.716-48.498-63.716m-8.534 97.991c-8.391 0-13.37-2.986-16.782-6.684l-.143-52.765c3.698-4.124 8.818-6.968 16.925-6.968c12.942 0 21.902 14.506 21.902 33.137c0 19.058-8.818 33.28-21.902 33.28M241.493 36.551l35.698-7.68V0l-35.698 7.538zm0 10.809h35.698v124.444h-35.698zm-38.257 10.524L200.96 47.36h-30.72v124.444h35.556V87.467c8.39-10.951 22.613-8.96 27.022-7.396V47.36c-4.551-1.707-21.191-4.836-29.582 10.524m-71.112-41.386l-34.702 7.395l-.142 113.92c0 21.049 15.787 36.551 36.836 36.551c11.662 0 20.195-2.133 24.888-4.693V140.8c-4.55 1.849-27.022 8.391-27.022-12.658V77.653h27.022V47.36h-27.022zM35.982 83.484c0-5.546 4.551-7.68 12.09-7.68c10.808 0 24.461 3.272 35.27 9.103V51.484c-11.804-4.693-23.466-6.542-35.27-6.542C19.2 44.942 0 60.018 0 85.192c0 39.252 54.044 32.995 54.044 49.92c0 6.541-5.688 8.675-13.653 8.675c-11.804 0-26.88-4.836-38.827-11.378v33.849c13.227 5.689 26.596 8.106 38.827 8.106c29.582 0 49.92-14.648 49.92-40.106c-.142-42.382-54.329-34.845-54.329-50.774" />
         </svg>
       ),
@@ -51,17 +52,17 @@ export function LogoCloud() {
     {
       name: "Raycast",
       logo: (
-        <svg className="h-7 w-auto" viewBox="0 0 512 512" fill="none">
+        <svg className="h-9 w-auto" viewBox="0 0 512 512" fill="none">
           <path fill="#FF6363" d="M126.2 385.8L0 259.6l46.3-46.3 126.2 126.2-46.3 46.3z" />
           <path fill="#FF6363" d="M252.4 512L126.2 385.8l46.3-46.3 126.2 126.2L252.4 512z" />
           <path fill="#FF6363" d="M172.5 339.5L46.3 213.3l46.3-46.3 126.2 126.2-46.3 46.3z" />
           <path fill="#FF6363" d="M298.7 465.7L172.5 339.5l46.3-46.3 126.2 126.2-46.3 46.3z" />
           <path fill="#FF6363" d="M259.6 0l126.2 126.2-46.3 46.3L213.3 46.3 259.6 0z" />
           <path fill="#FF6363" d="M385.8 126.2L259.6 0l46.3-46.3 126.2 126.2-46.3 46.3z" />
-          <path fill="#FF6363" d="M339.5 172.5L213.3 46.3l46.3-46.3 126.2 126.2-46.3 46.3z" />
+          <path fill="#FF6363" d="M339.5 172.5L218.7 92.5l46.3-46.3 126.2 126.2-46.3 46.3z" />
           <path fill="#FF6363" d="M465.7 298.7L339.5 172.5l46.3-46.3 126.2 126.2-46.3 46.3z" />
           <path fill="#FF6363" d="M218.7 293.3L92.5 167.1l46.3-46.3 126.2 126.2-46.3 46.3z" />
-          <path fill="#FF6363" d="M344.9 419.5L218.7 293.3l46.3-46.3 126.2 126.2-46.3 46.3z" />
+          <path fill="#FF6363" d="M344.9 419.5L293.3 218.7l46.3-46.3 126.2 126.2-46.3 46.3z" />
           <path fill="#FF6363" d="M293.3 218.7L167.1 92.5l46.3-46.3 126.2 126.2-46.3 46.3z" />
           <path fill="#FF6363" d="M419.5 344.9L293.3 218.7l46.3-46.3 126.2 126.2-46.3 46.3z" />
         </svg>
@@ -70,7 +71,7 @@ export function LogoCloud() {
     {
       name: "Supabase",
       logo: (
-        <svg className="h-7 w-auto" viewBox="0 0 109 113" fill="none">
+        <svg className="h-9 w-auto" viewBox="0 0 109 113" fill="none">
           <path
             d="M63.7076 110.284C60.8481 113.885 55.0502 111.912 54.9813 107.314L53.9738 40.0627L99.1935 40.0627C107.384 40.0627 111.952 49.5228 106.859 55.9374L63.7076 110.284Z"
             fill="url(#supabase-gradient-1)"
@@ -114,7 +115,7 @@ export function LogoCloud() {
     {
       name: "GitHub",
       logo: (
-        <svg className="h-8 w-auto" viewBox="0 0 98 96" fill="currentColor">
+        <svg className="h-10 w-auto" viewBox="0 0 98 96" fill="currentColor">
           <path
             fillRule="evenodd"
             clipRule="evenodd"
@@ -125,7 +126,7 @@ export function LogoCloud() {
     },
   ]
 
-  const duplicatedLogos = [...logos, ...logos, ...logos, ...logos]
+  const duplicatedLogos = [...logos, ...logos]
 
   return (
     <section className="py-16 border-y border-border bg-secondary/30 overflow-hidden">
@@ -141,17 +142,29 @@ export function LogoCloud() {
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
-        {/* Scrolling logos */}
-        <div className="flex animate-marquee">
-          {duplicatedLogos.map((logo, index) => (
-            <div
-              key={`${logo.name}-${index}`}
-              className="flex-shrink-0 mx-12 flex items-center gap-3 text-muted-foreground/60 hover:text-foreground transition-colors duration-300"
-            >
-              {logo.logo}
-              <span className="text-base font-medium">{logo.name}</span>
-            </div>
-          ))}
+        <div className="flex overflow-hidden">
+          <div className="flex animate-marquee">
+            {duplicatedLogos.map((logo, index) => (
+              <div
+                key={`${logo.name}-${index}`}
+                className="flex-shrink-0 mx-14 flex items-center gap-3 text-muted-foreground/60 hover:text-foreground transition-colors duration-300"
+              >
+                {logo.logo}
+                {logo.showName !== false && <span className="text-lg font-medium">{logo.name}</span>}
+              </div>
+            ))}
+          </div>
+          <div className="flex animate-marquee" aria-hidden="true">
+            {duplicatedLogos.map((logo, index) => (
+              <div
+                key={`${logo.name}-duplicate-${index}`}
+                className="flex-shrink-0 mx-14 flex items-center gap-3 text-muted-foreground/60 hover:text-foreground transition-colors duration-300"
+              >
+                {logo.logo}
+                {logo.showName !== false && <span className="text-lg font-medium">{logo.name}</span>}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -2,7 +2,7 @@
 
 *Automatically synced with your [v0.app](https://v0.app) deployments*
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://mindfloww.vercel.app)
+[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/akshays-projects-1417f322/v0-landing-page-design)
 [![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/fzGntfyRklk)
 
 ## Overview
@@ -14,7 +14,7 @@ Any changes you make to your deployed app will be automatically pushed to this r
 
 Your project is live at:
 
-**[https://mindfloww.vercel.app](https://mindfloww.vercel.app)**
+**[https://vercel.com/akshays-projects-1417f322/v0-landing-page-design](https://vercel.com/akshays-projects-1417f322/v0-landing-page-design)**
 
 ## Build your app
 

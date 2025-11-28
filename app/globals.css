@@ -134,17 +134,18 @@
   }
 }
 
-/* Marquee animation for logo cloud */
+/* Updated marquee animation for proper seamless scrolling and faster speed */
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-100%);
   }
 }
 
 .animate-marquee {
+  /* Increased duration from 15s to 25s for slower scroll */
   animation: marquee 25s linear infinite;
 }
 
